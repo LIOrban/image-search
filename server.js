@@ -64,7 +64,7 @@ app.get("/", function(req,res){
     Usage1: https://liorban-image-search.herokuapp.com/search/your-search-term
     will return an array of objects containing image URL, page URL and description
     
-    add ?offset=<number> to the URL to paginate through the responses
+    add ?offset=[number] to the URL to paginate through the responses
     
     Examples:
     https://liorban-image-search.herokuapp.com/search/tiger
