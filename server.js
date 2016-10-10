@@ -57,4 +57,22 @@ app.get("/search/:searchterm", function(req,res){
     });
 });
 
+app.get("/", function(req,res){
+    res.send(`<pre> 
+    Image Search Abstraction Layer - FreeCodeCamp BackEnd Project
+    
+    Usage1: https://liorban-image-search.herokuapp.com/search/<your search term>
+    will return an array of objects containing image URL, page URL and description
+    
+    add ?offset=<number> to the URL to paginate through the responses
+    
+    Examples:
+    https://liorban-image-search.herokuapp.com/search/tiger
+    https://liorban-image-search.herokuapp.com/search/tiger?offset=2
+    
+    Usage2: https://liorban-image-search.herokuapp.com/last
+    will return another array of objects containing the terms, date and time of the last searches.
+    </pre>`);
+});
+
 app.listen(process.env.PORT || 8080);
