@@ -61,7 +61,7 @@ app.get("/", function(req,res){
     res.send(`<pre> 
     Image Search Abstraction Layer - FreeCodeCamp BackEnd Project
     
-    Usage1: https://liorban-image-search.herokuapp.com/search/<your search term>
+    Usage1: https://liorban-image-search.herokuapp.com/search/your-search-term
     will return an array of objects containing image URL, page URL and description
     
     add ?offset=<number> to the URL to paginate through the responses
